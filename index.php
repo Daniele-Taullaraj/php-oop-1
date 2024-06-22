@@ -1,23 +1,8 @@
 <?php 
-class Movies
-{
-    public $titolo;
-    public $lingua;
-    public $durata;
 
-    public function __construct($titolo, $lingua, $durata)
-    {
-        $this->titolo = $titolo;
-        $this->lingua = $lingua;
-        $this->durata = $durata;
-    }
-}
+include __DIR__ . "/models/class.php";
+include __DIR__ . "/store.php";
 
-$listMovies=[
-    new Movies('Fast & Furious', 'EN', '120 min'),
-    new Movies('Fast & Furious2', 'EN', '130 min'),
-    new Movies('Fast & Furious3', 'EN', '126 min'),
-]
 ?>
 
 
@@ -36,7 +21,6 @@ $listMovies=[
 
 <body>
 
-    <h1>Hello OOP World</h1>
 
        
         <?php foreach ($listMovies as $movie) { ?> 
